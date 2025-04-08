@@ -1,0 +1,304 @@
+
+header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Form styling */
+.upload-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.image-preview {
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.image-preview img {
+  width: 100%;
+  display: block;
+}
+
+.submit-btn, .reset-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+  background-color: #3a7bc8;
+}
+
+.reset-btn {
+  margin-top: 2rem;
+}
+
+/* Loading spinner animation */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.loading-spinner {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgba(74, 144, 226, 0.2);
+  border-radius: 50%;
+  border-top-color: #4a90e2;
+  animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.loading-container p {
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error message styling */
+.error-message {
+  background-color: #fff1f0;
+  border: 1px solid #ffccc7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+.error-message p {
+  color: #cf1322;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.error-message button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.error-message button:hover {
+  background-color: #ff7875;
+}
+
+/* Results container */
+.results-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fancy Loading Animation */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.fancy-loader {
+  width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.loader-content {
+  position: relative;
+}
+
+/* Wireframe animation elements */
+.wireframe-grid {
+  height: 160px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.wireframe-box {
+  width: 45%;
+  height: 50px;
+  background-color: #e9ecef;
+  border: 2px dashed #adb5bd;
+  border-radius: 6px;
+  animation: pulse 2s infinite alternate;
+}
+
+.wireframe-line {
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  background-color: #e9ecef;
+  border: 2px dashed #adb5bd;
+  border-radius: 6px;
+  animation: pulse 2s infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.wireframe-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  border: 2px dashed #adb5bd;
+  animation: pulse 2s infinite alternate;
+  animation-delay: 1s;
+}
+
+/* Scanning beam effect */
+.analysis-beam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, 
+    rgba(13, 110, 253, 0), 
+    rgba(13, 110, 253, 0.8), 
+    rgba(13, 110, 253, 0));
+  animation: scan 2s infinite;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  z-index: 10;
+}
+
+/* Progress bar styles */
+.progress-container {
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  border-radius: 10px;
+  transition: width 0.4s ease-out;
+}
+
+.progress-text {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Loading message styles */
+.loading-message {
+  text-align: center;
+  color: #495057;
+}
+
+.loading-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #212529;
+}
+
+.loading-subtitle {
+  font-size: 1rem;
+  min-height: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 160px;
+  }
+}
